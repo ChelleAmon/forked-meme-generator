@@ -2,10 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
-import open from 'open';
-import webpack from 'webpack';
-import config from '../../webpack.config.dev.js';
-import middleware from 'webpack-dev-middleware';
 
 
 dotenv.config();
@@ -21,12 +17,6 @@ const filePath = path.join(clientPath, '/index.html')
 
 
 const app = express();
-const compiler = webpack(config);
-
-app.use(middleware(compiler, {
-    noInfo: true,
-    publicPath: config.output.publicPath
-}))
 
 app.use(cors())
 app.use(express.json());
