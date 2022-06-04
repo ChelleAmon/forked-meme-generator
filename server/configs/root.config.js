@@ -5,7 +5,7 @@ import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
 import config from '../../webpack.config.dev.js';
-
+import middleware from 'webpack-dev-middleware';
 
 
 dotenv.config();
@@ -23,7 +23,7 @@ const filePath = path.join(clientPath, '/index.html')
 const app = express();
 const compiler = webpack(config);
 
-app.use(require('webpack-dev-middleware') (compiler, {
+app.use(middleware(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
 }))
