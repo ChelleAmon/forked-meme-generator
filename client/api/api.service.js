@@ -2,7 +2,9 @@ import { environment } from '../environments/environment.js';
 
 
 export const apiService = ({
-    baseUrl: environment.production ? 'http://localhost:3000/api/' : `${/api/}`,
+    baseUrl: 'http://localhost:3000/api/',
+
+    // baseUrl: environment.production ? 'http://localhost:3000/api/' : `${/api/}`,
 
     get: function(url) {
         return fetch(this.baseUrl + url).then(res => res.json());
