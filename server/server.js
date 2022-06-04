@@ -1,6 +1,6 @@
-import * as rootConfig from "./server/configs/root.config.js";
-import * as dbConfig from './server/configs/db.config.js';
-import { apiRouter } from './server/routes/api.routes.js';
+import * as rootConfig from "./configs/root.config.js";
+import * as dbConfig from './configs/db.config.js';
+import { apiRouter } from './routes/api.routes.js';
 
 const port =  process.env.PORT || 3001;
 const app = rootConfig.app;
