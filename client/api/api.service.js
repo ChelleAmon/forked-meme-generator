@@ -2,7 +2,7 @@ import { environment } from '../environments/environment.js';
 
 
 export const apiService = ({
-    baseUrl: 'http://localhost:3000/api/',
+    baseUrl: 'http://localhost:3001/api/',
 
     // baseUrl: environment.production ? 'http://localhost:3000/api/' : `${/api/}`,
 
