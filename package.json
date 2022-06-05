@@ -2,7 +2,7 @@
   "name": "meme-generator",
   "version": "1.0.0",
   "description": "meme generator app using mongodb, express, node and javascript",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
