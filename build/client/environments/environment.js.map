@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/client/environments/environment.js"],"names":["environment","production","console","log"],"mappings":";;;;;AAAO,IAAMA,oCAAc;AACvBC,gBAAY;AADW,CAApB;;AAILC,QAAQC,GAAR,CAAY,aAAZ,EAA2BH,WAA3B","file":"environment.js","sourcesContent":["export const environment = {\n    production: false\n  };\n\n  console.log('Environment', environment)"]}
