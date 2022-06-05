@@ -1,2 +1,2 @@
-web: node server.js
+web: babel-node ./src/index.js
 
