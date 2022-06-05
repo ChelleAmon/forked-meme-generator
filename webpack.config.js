@@ -1,6 +1,6 @@
-import HtmlWebPackPlugin from 'html-webpack-plugin';
-
-module.exports = {
+import  HtmlWebPackPlugin  from 'html-webpack-plugin';
+ 
+export default  {
     module: {
         rules: [
             {
@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html",
+            template: "./index.html",
             filename: "./index.html"
         })
     ]

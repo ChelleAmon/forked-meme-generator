@@ -11,6 +11,23 @@
     "build": "webpack --mode production"
 
   },
+  "nodemonConfig": {
+    "restartable":"rs",
+    "ignore": [
+      ".git",
+      "node_modules",
+      "dist/",
+      "coverage/"
+    ], 
+    "watch": [
+      "server/"
+    ],
+    "exec": "node --loader server/server.js --emit",
+    "env": {
+      "NODE_ENV": "development"
+    }, 
+    "ext": "js, json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aman-codde/meme-generator.git"
