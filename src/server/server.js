@@ -7,6 +7,10 @@ const app = rootConfig.app;
 
 app.use('/', apiRouter)
 
+app.get('/', (req,res) => {
+  res.json({message: "Welcome to Meme Generator App"})
+})
+
 app.all('*', (req,res) => {
   const filePath = rootConfig.filePath;
   res.sendFile(filePath);

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { envConfig } from '../configs/root.config.js';
+import { envConfig } from './root.config.js';
 
 const mongoUri = envConfig.mongoUri || envConfig.localMongoUri
 

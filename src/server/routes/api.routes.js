@@ -1,5 +1,5 @@
 import express from 'express';
-import { captionRouter } from '../routes/caption.route.js'
+import { captionRouter } from './caption.route.js'
 export const apiRouter = express.Router();
 
 apiRouter.use('/api', captionRouter)

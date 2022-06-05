@@ -12,9 +12,10 @@ const envConfig = {
 }
 
 const __dirname = path.resolve();
-const clientPath = path.join(__dirname, '/client')
+const clientPath = path.join(__dirname, '/src/client')
 const filePath = path.join(clientPath, '/index.html')
 
+console.log(clientPath)
 
 const app = express();
 
