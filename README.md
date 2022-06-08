@@ -1,2 +1,2 @@
-# meme-generator
-Meme generator app using Mongodb, Express, Node and Javascript (MENJ)
+# Meme Generator- Forked
+Forked my own repository to test out new technologies that might be useful during deployment
